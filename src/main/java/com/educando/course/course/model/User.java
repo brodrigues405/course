@@ -26,6 +26,7 @@ public class User implements Serializable{
 	private String phone;
 	private String password;
 	
+	
 	@OneToMany(mappedBy = "client")
 	List<Order> orders = new ArrayList<>();
 	
